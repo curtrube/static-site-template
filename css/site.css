@@ -38,6 +38,13 @@ a {
   height: 40px;
 }
 
+.icon--download {
+  height: 15px;
+  width: 15px;
+  padding-left: 5px;
+  fill: #fff;
+}
+
 .icon--white {
   fill: #fff;
 }
@@ -114,4 +121,34 @@ a {
   .nav__item {
     border: 0;
   }
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Badges */
+.badge {
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 20px;
+  padding: 1.5rem 3rem;
+  white-space: nowrap;
+}
+
+.badge--intro {
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 20px 20px 0 20px;
+}
+
+.badge--download {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.badge--download > img {
+  max-width: 20px;
+  padding-top: 10px;
 }
