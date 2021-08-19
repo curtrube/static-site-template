@@ -133,7 +133,7 @@ a {
   font-size: 1.4rem;
   font-weight: 500;
   border-radius: 20px;
-  padding: 1.5rem 3rem;
+  padding: 1rem 3rem;
   white-space: nowrap;
 }
 
@@ -163,13 +163,28 @@ a {
   padding-top: 10px;
 }
 
-/* Hero  */
+/* Hero */
 .hero {
   min-height: 100vh;
-  background: #a9d6e5;
+  /* background: #a9d6e5; */
+  color: #fff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.hero h1 {
+  font-size: 5rem;
+}
+
+.hero h3 {
+  font-size: 2.4rem;
+}
+
+.hero__title {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
 }
 
 /* About */
@@ -178,12 +193,28 @@ a {
   background: #61a5c2;
 }
 
-.block--skewed-left {
-  padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+/* Button */
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  outline: 0;
+  padding: 2rem 4vw;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
 }
 
-.block--skewed-right {
-  padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+.btn-secondary {
+  background: var(--color-body);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-secondary:hover {
+  background: #fff;
+  color: var(--color-body);
 }
