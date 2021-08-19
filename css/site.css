@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #2ca46d;
+  --color-primary: #3a86ff;
   --color-body: #232a34;
   --color-body-lighter: #2d343e;
 }
@@ -180,11 +180,16 @@ a {
 
 .hero h3 {
   font-size: 2.4rem;
+  color: #e9ecef;
 }
 
 .hero__title {
   margin: 0;
   font-family: "Quicksand", sans-serif;
+}
+
+.hero__about {
+  margin-top: 3rem;
 }
 
 /* About */
@@ -202,7 +207,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 4vw;
+  padding: 1.7rem 3rem;
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
@@ -215,6 +220,7 @@ a {
 }
 
 .btn-secondary:hover {
-  background: #fff;
-  color: var(--color-body);
+  background: #3a86ff;
+  color: #fff;
+  border: 1px solid #3a86ff;
 }
