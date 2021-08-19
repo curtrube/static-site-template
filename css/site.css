@@ -137,6 +137,16 @@ a {
   white-space: nowrap;
 }
 
+.badge--about {
+  background: #014f86;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.badge--about > a {
+  text-decoration: none;
+}
+
 .badge--intro {
   background: var(--color-primary);
   color: #fff;
@@ -151,4 +161,29 @@ a {
 .badge--download > img {
   max-width: 20px;
   padding-top: 10px;
+}
+
+/* Hero  */
+.hero {
+  min-height: 100vh;
+  background: #a9d6e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About */
+.about {
+  min-height: 100vh;
+  background: #61a5c2;
+}
+
+.block--skewed-left {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.block--skewed-right {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
