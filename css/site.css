@@ -16,9 +16,19 @@ html {
 
 body {
   background: var(--color-body);
-  font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+
+  font-size: 1.4rem;
   line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quicksand", sans-serif;
 }
 
 /* Links */
@@ -212,12 +222,6 @@ a {
   margin-top: 3rem;
 }
 
-/* About */
-.about {
-  min-height: 100vh;
-  background: #61a5c2;
-}
-
 /* Button */
 .btn {
   border-radius: 40px;
@@ -243,4 +247,49 @@ a {
   background: #3a86ff;
   color: #fff;
   border: 1px solid #3a86ff;
+}
+
+/* Section Title */
+.section__title {
+  text-align: center;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Card */
+.card {
+  width: 370px;
+  color: #fff;
+}
+
+.card__content {
+  background: var(--color-body-lighter);
+  padding: 6rem;
+  border-radius: 3px;
+  margin: 5rem 1.5rem;
+  position: relative;
+}
+
+.card__content > span {
+  position: absolute;
+  top: -2.5rem;
+  left: 3rem;
+  width: 7rem;
+  height: 7rem;
+  color: #fff;
+  border-radius: 100px;
+  background: var(--color-primary);
+}
+
+.card__title {
+  font-size: 2.2rem;
+  margin: 15px 0;
+}
+
+.card__body {
+  margin: 0;
 }
