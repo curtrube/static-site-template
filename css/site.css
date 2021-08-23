@@ -169,6 +169,18 @@ a {
 
 .badge--social {
   color: #fff;
+  border: 1px solid white;
+  border-radius: 100%;
+  text-align: center;
+  padding: 1rem;
+  width: 45px;
+  height: 45px;
+}
+
+.badge--social:hover {
+  background: #fff;
+  color: var(--color-body-lighter);
+  border: 1px solid var(--color-body);
 }
 
 /* Hero */
