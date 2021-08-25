@@ -301,3 +301,7 @@ a {
 .about-me {
   align-items: center;
 }
+
+.about-headshot {
+  border-radius: 30%;
+}
