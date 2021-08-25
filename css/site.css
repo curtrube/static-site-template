@@ -99,6 +99,7 @@ a {
 .nav__item > a {
   color: #dee2e6;
   transition: color 0.3s;
+  font-size: 1.8rem;
 }
 
 .nav__item > a:hover {
@@ -200,10 +201,10 @@ a {
 /* Hero */
 .hero {
   min-height: 100vh;
-  /* background: #a9d6e5; */
   color: #fff;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -224,6 +225,12 @@ a {
 
 .hero__about {
   margin-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero h1 {
+    font-size: 6rem;
+  }
 }
 
 /* Button */
@@ -298,8 +305,25 @@ a {
   margin: 0;
 }
 
-.about-me {
+.about {
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  margin-left: 4rem;
+}
+
+.about__title {
+  font-size: 4rem;
+  margin: 0 0 20px 0;
+}
+
+.about__summary {
+  max-width: 60%;
+}
+
+.about a {
+  margin-top: 4rem;
 }
 
 .about-headshot {
