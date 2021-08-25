@@ -207,6 +207,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .hero h1 {
@@ -228,8 +229,17 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    text-align: left;
+  }
   .hero h1 {
     font-size: 6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero h1 {
+    font-size: 7rem;
   }
 }
 
